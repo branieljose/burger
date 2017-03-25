@@ -27,19 +27,18 @@ router.get("/", function(req, res) {
  
 });
 
-router.post("/add_burger", function(req, res){
-	burger.create()
-})
-
+router.post("/add_burger", function(req, res) {
+		console.log(req.body);
+		burger.create( ["burger_name"], [req.body.name] , function(data){
+			res.redirect("/app");
+		})
+ 
+});
 router.put("/:id", function(req, res) {
 		console.log(req.params.id)
-		console.log("devoured", req.body.devoured)
-		burger.update([req.body.devoured], [req.params.id], function(data){
-			
-			var burger = {
-				burgers: data
-			}
-			res.redirect("/");
+		console.log(req.body);
+		burger.update([req.body.devoured], [req.params.id] , function(data){
+			res.redirect("/app");
 		})
  
 });
