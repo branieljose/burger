@@ -14,7 +14,8 @@ button:focus {
 }
 h1 {
 	font-size: 30px;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
 
 }
 li {
@@ -22,23 +23,27 @@ li {
   margin: 5px;
   padding: 5px;
 }
+.card-panel {
+	padding-top:10px;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
 .container{
 	background-color: #ecb74c;
-	
+
 	
 	/*|initial|inherit;*/
 	/*background-color: #ecb74c;*/
 	/*opacity: 0.5;*/
 }
-.label {
-  font-weight: bold;
+.add-form {
+  padding: 30px;
 }
-
-.create-update-form {
+/*.create-update-form {
   background: aqua;
   margin: 5px;
   padding: 5px;
-}
+}*/
 
 .form-group {
   margin-bottom: 5px;
